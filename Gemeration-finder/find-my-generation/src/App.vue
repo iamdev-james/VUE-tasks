@@ -1,5 +1,13 @@
 <template>
-  Javascript
+  <section>
+    <div>
+      <input type="number">
+      <input type="text">
+    </div>
+    <div>
+      Result goes here
+    </div>
+  </section>
 </template>
 
 <script>
