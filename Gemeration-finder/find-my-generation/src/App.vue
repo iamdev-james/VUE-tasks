@@ -1,29 +1,33 @@
 <template>
-  <section>
+  <div>
     <div>
       <input type="number">
       <input type="text">
     </div>
-    <div>
+    <div  class="bg-orange-50">
       Result goes here
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
-
+import '@/assets/tailwind.css'
 export default {
-  name: 'App'
+  name: 'App',
+  methods: {
+    // generation (generation) {
+    //  let gen_name
+    //   if (generation === 0) {
+    //     gen_name = 'Me!'
+    //     return gen_name
+    //   } else if (generation === 1) {
+    //     gen_name = 'Son'
+    //   }
+    // } 
+  }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
