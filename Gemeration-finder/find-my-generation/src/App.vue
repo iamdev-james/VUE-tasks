@@ -17,53 +17,48 @@ export default {
   name: 'App',
   data() {
     return {
-      gen_name: '',
-      generationvalue: Number,
-      gendervalue: ''
     }
   },
   methods: {
-    checkGeneration() {
-      this.generation(this.generationvalue, this.gendervalue)
-    },
-    generation (generation, gender) {
-      if (generation === 0 && gender === 'M' || gender === 'F') {
-        this.gen_name = 'me!'
-        return
-      } else if (generation === 1 || generation === -1) {
-          if(generation === 1 && gender === 'm') {
-            this.gen_name = 'son'
-          } else if (generation === 1 && gender === 'f') {
-            this.gen_name = 'daugther'
-          } else if (generation === -1 && gender === 'f') {
-            this.gen_name = 'mother'
-          } else if (generation === -1 && gender === 'm') {
-            this.gen_name = 'father'
+    function generation(x, y) {
+    var gen = '';
+	  if (x === 0 && (y === 'm' || y === 'f')) {
+      gen = "me!"
+      } else if (x === 1 || x === -1) {
+          if(x === 1 && y === 'm') {
+          gen = "son"
+          } else if (x === 1 && y === 'f') {
+          gen = "daughter"
+          } else if (x === -1 && y === 'f') {
+          gen = "mother"
+          } else if (x === -1 && y === 'm') {
+          gen = "father"
           }
-      }  else if (generation === 2 || generation === -2) {
-          if(generation === 2 && gender === 'm') {
-            this.gen_name = 'grandson'
-          } else if (generation === 2 && gender === 'f') {
-            this.gen_name = 'granddaugther'
-          } else if (generation === -2 && gender === 'f') {
-            this.gen_name = 'grandmother'
-          } else if (generation === -2 && gender === 'm') {
-            this.gen_name = 'grandfather'
+        }  else if (x === 2 || x === -2) {
+          if(x === 2 && y === 'm') {
+          gen = "grandson"
+          } else if (x === 2 && y === 'f') {
+          gen = "granddaughter"
+          } else if (x === -2 && y === 'f') {
+          gen = "grandmother"
+          } else if (x === -2 && y === 'm') {
+          gen = "grandfather"
           }
-      } else if (generation === 3 || generation === -3) {
-          if(generation === 3 && gender === 'm') {
-            this.gen_name = 'great grandson'
-          } else if (generation === 3 && gender === 'f') {
-            this.gen_name = 'great granddaugther'
-          } else if (generation === -3 && gender === 'f') {
-            this.gen_name = 'great grandmother'
-          } else if (generation === -3 && gender === 'm') {
-            this.gen_name = 'great grandfather'
-          }
-      } else {
-          this.gen_name = "Unknown generation!!!"
+        } else if (x === 3 || x === -3) {
+          if(x === 3 && y === 'm') {
+          gen = "great grandson"
+          } else if (x === 3 && y === 'f') {
+          gen = "great granddaughter"
+          } else if (x === -3 && y === 'f') {
+          gen = "great grandmother"
+          } else if (x === -3 && y === 'm') {
+          gen = "great grandfather"
+          };
+        } else {
+        gen = "Unknown x!!!"
       }
-    } 
+    return gen;
+    }; 
   }
 }
 </script>
