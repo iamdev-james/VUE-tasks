@@ -80,7 +80,7 @@
    <v-content>
         <v-layout row wrap justify-space-between align-left class="my-3">
           <v-flex> {{ userObj.name? userObj.name: "User does not exist" }} </v-flex>
-          <v-flex><i> Joined {{ new Date(userObj.created_at).getDay() }} - {{ new Intl.DateTimeFormat('en-US', options).format(new Date(userObj.created_at).getMonth()) }} - {{ new Date(userObj.created_at).getFullYear() }}</i></v-flex>
+          <v-flex><i> Joined {{ new Date(userObj.created_at).getDay() +1 }} - {{ new Intl.DateTimeFormat('en-US', options).format(new Date(userObj.created_at).getMonth()) }} - {{ new Date(userObj.created_at).getFullYear() }}</i></v-flex>
         </v-layout>
         <span class="nested indigo--text">@ {{ userObj.login }}</span>
         <div class="nested"> {{ userObj.bio? userObj.bio: "Not available" }}</div>

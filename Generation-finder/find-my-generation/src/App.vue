@@ -6,7 +6,7 @@
       <button class= 'py-3 px-6' @click= "checkGeneration()"> Submit </button>
     </div>
     <div class= "block">
-      This is your clan: {{ gen_name }}
+      This is your clan: {{ gen }}
     </div>
   </main> 
 </template>
