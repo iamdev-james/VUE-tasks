@@ -345,6 +345,9 @@
 		<section class="h-screen flex justify-end items-center mt-32">
 			<Pricing />
 		</section>
+		<section id="Sec-F" class="h-screen flex justify-end items-center mt-32">
+			<Payment />
+		</section>
 	</main>
 </template>
 
@@ -352,11 +355,12 @@
 	import Header from "@/components/header.vue";
 	import Testimonial from "@/components/testimonial.vue";
 	import Pricing from "@/components/pricing.vue";
+	import Payment from "@/components/payment.vue";
 
 	export default {
 		name: "App",
 		components: {
-			Header, Testimonial, Pricing,
+			Header, Testimonial, Pricing, Payment, 
 		},
 	};
 </script>
