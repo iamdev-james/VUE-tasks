@@ -342,17 +342,21 @@
     <section class="h-screen flex flex-col justify-center items-center">
       <Testimonial />
     </section>
+		<section class="h-screen flex justify-end items-center mt-32">
+			<Pricing />
+		</section>
 	</main>
 </template>
 
 <script>
 	import Header from "@/components/header.vue";
 	import Testimonial from "@/components/testimonial.vue";
+	import Pricing from "@/components/pricing.vue";
 
 	export default {
 		name: "App",
 		components: {
-			Header, Testimonial,
+			Header, Testimonial, Pricing,
 		},
 	};
 </script>
