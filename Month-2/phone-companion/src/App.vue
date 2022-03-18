@@ -1,0 +1,390 @@
+<template>
+	<main id="container" class="w-screen flex flex-col justify-center items-center">
+		<section id="main" class="w-screen">
+			<div id="app" class="text-white flex items-center justify-center">
+				<div class="mb-32 w-4/5">
+					<Header />
+					<div class="mt-10 h-screen flex flex-row justify-end items-center">
+						<div class="h-full w-5/6 flex-auto flex flex-col justify-around">
+							<p class="text-8xl font-bold leading-tight">
+								Experience your ultimate mobile application
+							</p>
+							<p class="leading-loose -mt-8 text-lg font-medium">
+								Get your blood tests delivered at let home collect sample from
+								the victory of the managements that supplies best design system
+								guidelines ever.
+							</p>
+							<div class="flex flex-row justify-start items-center">
+								<span
+									class="px-10 text-lg mr-4 py-4 bg-white rounded-full text-black"
+									>Get Started</span
+								>
+								<img :src="require('@/assets/images/watchvideo.svg')" />
+							</div>
+							<div class="flex flex-row justify-start items-center">
+								<span class="mr-4">Sponsored by:</span
+								><img :src="require('@/assets/images/logo.svg')" />
+							</div>
+						</div>
+						<img
+							:src="require('@/assets/images/headershowcase.png')"
+							class="showcase-img"
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section
+			class="flex flex-col justify-around items-center h-quarter w-5/6 mt-32"
+		>
+			<div class="text-center">
+				<p class="text-lg tracking-wider text-blue-darker font-semibold mb-5">
+					Quality Features
+				</p>
+				<p class="text-4xl font-bold">Meet exciting feature of app</p>
+			</div>
+			<div class="flex flex-row justify-between items-center">
+				<div
+					class="flex flex-col justify-between items-center px-12 text-center leading-loose"
+				>
+					<img :src="require('@/assets/images/icon2.svg')" class="mt-6" />
+					<p class="text-xl font-semibold my-6">Vector Editing</p>
+					<p>
+						Get your blood tests delivered at home collect a sample from the
+						your blood tests.
+					</p>
+				</div>
+				<div
+					class="flex flex-col justify-between items-center px-12 text-center leading-loose"
+				>
+					<img :src="require('@/assets/images/icon1.svg')" class="mt-6" />
+					<p class="text-xl my-6 font-semibold">Customize & Monitoring</p>
+					<p>
+						Get your blood tests delivered at home collect a sample from the
+						your blood tests.
+					</p>
+				</div>
+				<div
+					class="flex flex-col justify-between items-center px-12 text-center leading-loose"
+				>
+					<img :src="require('@/assets/images/icon.svg')" class="mt-6" />
+					<p class="text-xl my-6 font-semibold">Quality & Short-period</p>
+					<p>
+						Get your blood tests delivered at home collect a sample from the
+						your blood tests.
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="mt-32 flex flex-col justify-center items-center">
+			<div class="flex flex-row justify-center items-start w-2/3">
+				<div class="flex-1">
+					<img :src="require('@/assets/images/sec-C-Show.svg')" />
+				</div>
+				<div class="flex-1 pl-32 h-full">
+					<p class="text-lg py-6">CORE FEATURES</p>
+					<p class="text-4xl font-bold leading-normal pb-12">
+						Smart Jackpots that you may love this anytime & anywhere
+					</p>
+					<div>
+						<div class="flex flex-row justify-between items-start">
+							<img :src="require('@/assets/images/Group1.svg')" class="pr-4" />
+							<div class="mb-10">
+								<p class="text-lg mb-4 font-semibold">Smart Features</p>
+								<p class="text-base leading-normal">
+									Get your blood tests delivered at let home collect sample from
+									the victory of the managements. your blood tests.
+								</p>
+							</div>
+						</div>
+						<div class="flex flex-row justify-center items-start">
+							<img :src="require('@/assets/images/Group.svg')" class="pr-4" />
+							<div>
+								<p class="text-lg mb-4 font-semibold">Secure Contents</p>
+								<p class="text-base leading-normal">
+									Get your blood tests delivered at let home collect sample from
+									the victory of the managements. your blood tests.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div></div>
+				</div>
+			</div>
+		</section>
+		<!-- Section C -->
+		<section
+			class="flex flex-col justify-around items-center h-quarter w-5/6 mt-32"
+		>
+			<div class="text-center">
+				<p class="text-lg tracking-wider text-blue-darker font-semibold mb-5">
+					Quality Features
+				</p>
+				<p class="text-4xl font-bold">Meet exciting feature of app</p>
+			</div>
+			<div class="section-c">
+				<div
+					class="flex flex-row justify-between items-start px-2 text-left leading-loose"
+				>
+					<img
+						:src="require('@/assets/images/SEC-C-Icons/icon1.svg')"
+						class="mt-6"
+					/>
+					<div class="flex flex-col items-start justify-start px-6">
+						<p class="text-lg font-semibold my-4">Smart Features</p>
+						<p class="text-sm text-grey-darkest">
+							Get your blood tests delivered at let home collect sample from the
+							victory of the managements.
+						</p>
+					</div>
+				</div>
+				<div
+					class="flex flex-row justify-between items-start px-2 text-left leading-loose"
+				>
+					<img
+						:src="require('@/assets/images/SEC-C-Icons/icon2.svg')"
+						class="mt-6"
+					/>
+					<div class="flex flex-col items-start justify-start px-6">
+						<p class="text-lg my-4 font-semibold">Fast Performance</p>
+						<p class="text-sm text-grey-darkest">
+							Get your blood tests delivered at let home collect sample from the
+							victory of the managements.
+						</p>
+					</div>
+				</div>
+				<div
+					class="flex flex-row justify-between items-start px-2 text-left leading-loose"
+				>
+					<img
+						:src="require('@/assets/images/SEC-C-Icons/icon3.svg')"
+						class="mt-6"
+					/>
+					<div class="flex flex-col items-start justify-start px-6">
+						<p class="text-lg my-4 font-semibold">Unlimited Content</p>
+						<p class="text-sm text-grey-darkest">
+							Get your blood tests delivered at let home collect sample from the
+							victory of the managements.
+						</p>
+					</div>
+				</div>
+				<div
+					class="flex flex-row justify-between items-start px-2 text-left leading-loose"
+				>
+					<img
+						:src="require('@/assets/images/SEC-C-Icons/icon4.svg')"
+						class="mt-6"
+					/>
+					<div class="flex flex-col items-start justify-start px-6">
+						<p class="text-lg my-4 font-semibold">Unlimited Customization</p>
+						<p class="text-sm text-grey-darkest">
+							Get your blood tests delivered at let home collect sample from the
+							victory of the managements.
+						</p>
+					</div>
+				</div>
+				<div
+					class="flex flex-row justify-between items-start px-2 text-left leading-loose"
+				>
+					<img
+						:src="require('@/assets/images/SEC-C-Icons/icon5.svg')"
+						class="mt-6"
+					/>
+					<div class="flex flex-col items-start justify-start px-6">
+						<p class="text-lg my-4 font-semibold">Boost Productivity</p>
+						<p class="text-sm text-grey-darkest">
+							Get your blood tests delivered at let home collect sample from the
+							victory of the managements.
+						</p>
+					</div>
+				</div>
+				<div
+					class="flex flex-row justify-between items-start px-2 text-left leading-loose"
+				>
+					<img
+						:src="require('@/assets/images/SEC-C-Icons/icon6.svg')"
+						class="mt-6"
+					/>
+					<div class="flex flex-col items-start justify-start px-6">
+						<p class="text-lg my-4 font-semibold">Customer Support</p>
+						<p class="text-sm text-grey-darkest">
+							Get your blood tests delivered at let home collect sample from the
+							victory of the managements.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Section-E -->
+		<section class="mt-24 flex flex-col justify-center items-center">
+			<div class="flex flex-row justify-center items-center w-5/6">
+				<div class="flex-1 pr-36 h-full">
+					<p class="text-lg py-6">CORE FEATURES</p>
+					<p class="text-5xl font-bold leading-normal pb-6">
+						Smart Jackpots that you may love this anytime & anywhere
+					</p>
+					<div>
+						<div class="leading-loose text-lg text-grey-darkest">
+							Get your tests delivered at let home collect sample from the
+							victory of the managements that supplies best design system
+							guidelines ever. Get your tests delivered at let home collect
+							sample.
+						</div>
+						<div class="mt-10">
+							<span
+								class="text-white px-10 text-lg mr-4 py-4 bg-blue-darker rounded-full text-black"
+								>Get Started</span
+							>
+						</div>
+					</div>
+				</div>
+				<div class="flex-1 -ml-32">
+					<img :src="require('@/assets/images/sec-E-showcase.svg')" />
+				</div>
+			</div>
+		</section>
+		<!-- SECTION F -->
+		<section id="Sec-F" class="w-screen mt-32">
+			<div
+				id="Sec-F-main"
+				class="bg-cover bg-center text-white flex items-center justify-center"
+			>
+				<div class="py-32 px-24">
+					<div class="mb-16 text-center">
+						<p class="text-sm tracking-wider text-grey font-semibold mb-3">
+							WHATS THE FUNCTION
+						</p>
+						<p class="text-3xl font-bold">Let’s see how it works</p>
+					</div>
+					<div class="flex flex-row justify-start items-start">
+						<div
+							class="flex flex-col justify-between items-start px-2 leading-loose"
+						>
+							<div class="flex flex-row justify-between items-start">
+								<span
+									class="text-3xl font-semibold px-4 rounded-xl text-blue-darker bg-white mr-2"
+									>01</span
+								>
+								<img
+									:src="require('@/assets/images/sec-F/arrow1.svg')"
+									class="inline opacity-25"
+								/>
+							</div>
+							<p class="text-xl font-bold my-6">
+								Set disbursement Instructions
+							</p>
+							<p class="pr-5 text-sm text-grey font-semibold">
+								Get your blood tests delivered at home collect a sample from the
+								your blood tests.
+							</p>
+						</div>
+						<div
+							class="flex flex-col justify-between items-start px-2 leading-loose"
+						>
+							<div class="flex flex-row justify-between items-end">
+								<span
+									class="text-3xl font-semibold px-4 rounded-xl text-blue-darker bg-white mr-2"
+									>02</span
+								>
+								<img
+									:src="require('@/assets/images/sec-F/arrow2.svg')"
+									class="inline opacity-25"
+								/>
+							</div>
+							<p class="text-xl my-6 font-semibold">
+								Assembly retrieves funds from your account
+							</p>
+							<p class="pr-5 text-sm text-grey font-semibold">
+								Get your blood tests delivered at home collect a sample from the
+								your blood tests.
+							</p>
+						</div>
+						<div
+							class="flex flex-col justify-between items-start px-3 leading-loose"
+						>
+							<div class="flex flex-row justify-between items-start">
+								<span
+									class="text-3xl font-semibold px-4 rounded-xl text-blue-darker bg-white mr-2"
+									>03</span
+								>
+								<img
+									:src="require('@/assets/images/sec-F/arrow1.svg')"
+									class="inline opacity-25"
+								/>
+							</div>
+							<p class="text-xl my-6 font-bold">
+								Assembly initiates disbursement
+							</p>
+							<p class="pr-5 text-sm text-grey font-semibold">
+								Get your blood tests delivered at home collect a sample from the
+								your blood tests.
+							</p>
+						</div>
+						<div
+							class="flex flex-col justify-between items-start px-3 leading-loose"
+						>
+							<span
+								class="text-3xl font-semibold px-4 rounded-xl text-blue-darker bg-white"
+								>04</span
+							>
+							<p class="text-xl my-6 font-bold">
+								Customer receives funds payment
+							</p>
+							<p class="pr-5 text-sm text-grey font-semibold">
+								Get your blood tests delivered at home collect a sample from the
+								your blood tests.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+    <section class="h-screen flex flex-col justify-center items-center">
+      <Testimonial />
+    </section>
+	</main>
+</template>
+
+<script>
+	import Header from "@/components/header.vue";
+	import Testimonial from "@/components/testimonial.vue";
+
+	export default {
+		name: "App",
+		components: {
+			Header, Testimonial,
+		},
+	};
+</script>
+
+<style>
+	#container {
+		font-family: 'DM Sans', sans-serif;
+	}
+	#main {
+		background: linear-gradient(105.18deg, #1e3c72 -2.04%, #2a5298 107.42%);
+		border-radius: 0px 0px 300px 0px;
+	}
+	#app {
+		width: 100vw;
+		background-image: url("@/assets/images/pattern.svg");
+	}
+	.showcase-img {
+		flex: 1;
+		margin-right: -20%;
+		margin-left: -16%;
+		height: 95vh;
+		width: 85%;
+		margin-top: 5%;
+	}
+	.section-c {
+		display: grid;
+		grid-template-columns: repeat(3, 400px);
+	}
+	#Sec-F {
+		background: linear-gradient(105.18deg, #1e3c72 -2.04%, #2a5298 107.42%);
+	}
+	#Sec-F-main {
+		background-image: url("@/assets/images/sec-F/pattern-F.svg");
+	}
+</style>
