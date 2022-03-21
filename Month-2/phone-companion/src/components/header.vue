@@ -15,7 +15,7 @@
       </div>
       <div class="relative">
         <img v-show="false" :src="require('@/assets/images/Header/navdark.png')" class="absolute" height="15px" width="18px" />
-        <img :src="require('@/assets/images/Header/navwhite.png')" class="absolute nrm:invisible" height="15px" width="18px" />
+        <img :src="require('@/assets/images/Header/navwhite.png')" class="absolute visible nrm:invisible" height="15px" width="18px" />
       </div>
     </div>
   </main>
