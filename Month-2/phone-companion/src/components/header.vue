@@ -4,7 +4,7 @@
       <div class="flex justify-center items-center">
         <img class="inline" :src='require("@/assets/images/headerLogo.svg")' />
       </div>
-      <div class='w-2/5 flex align-center justify-between'>
+      <div class='w-2/5 flex invisible nrm:visible align-center justify-between'>
         <p>Home</p>
         <p>Features</p>
         <p>Testimonial</p>
@@ -13,10 +13,10 @@
       <div>
         <button class="text-white px-8 py-3 border-white border-2 rounded-full">Get Started</button>
       </div>
-      <!-- <div>
-        <img :src="require('@/assets/images/Header/navdark.png')" height="10px" />
-        <img :src="require('@/assets/images/Header/navwhite.png')" height="1px" />
-      </div> -->
+      <div class="relative">
+        <img v-show="false" :src="require('@/assets/images/Header/navdark.png')" class="absolute" height="15px" width="18px" />
+        <img :src="require('@/assets/images/Header/navwhite.png')" class="absolute" height="15px" width="18px" />
+      </div>
     </div>
   </main>
 </template>

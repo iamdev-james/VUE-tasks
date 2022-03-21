@@ -44,7 +44,7 @@
 				</p>
 				<p class="text-4xl font-bold">Meet exciting feature of app</p>
 			</div>
-			<div class="flex flex-row justify-between items-center">
+			<div class="flex flex-row justify-between items-center flex-wrap">
 				<div
 					class="flex flex-col justify-between items-center px-12 text-center leading-loose"
 				>
@@ -78,7 +78,7 @@
 			</div>
 		</section>
 		<!-- SECTION B -->
-		<section class="mt-32 flex flex-col justify-center items-center">
+		<section class="mt-32 flex flex-col justify-center items-center flex-wrap">
 			<div class="flex flex-row justify-center items-start w-2/3">
 				<div class="flex-1">
 					<img :src="require('@/assets/images/sec-C-Show.svg')" />
@@ -116,7 +116,7 @@
 		</section>
 		<!-- Section C -->
 		<section
-			class="flex flex-col justify-around items-center h-quarter w-5/6 mt-32"
+			class="flex flex-col justify-around items-center flex-wrap h-quarter w-5/6 mt-32"
 		>
 			<div class="text-center">
 				<p class="text-lg tracking-wider text-blue-darker font-semibold mb-5">
@@ -218,7 +218,7 @@
 			</div>
 		</section>
 		<!-- Section-E -->
-		<section class="mt-24 flex flex-col justify-center items-center">
+		<section class="mt-24 flex flex-col justify-center items-center flex-wrap">
 			<div class="flex flex-row justify-center items-center w-5/6">
 				<div class="flex-1 pr-38 xl:pr-32 h-full">
 					<p class="text-lg py-6">CORE FEATURES</p>
@@ -260,7 +260,7 @@
 					</div>
 					<div class="flex flex-row justify-start items-start">
 						<div
-							class="flex flex-col justify-between items-start px-2 leading-loose"
+							class="flex flex-col justify-between items-start px-2 flex-wrap leading-loose"
 						>
 							<div class="flex flex-row justify-between items-start">
 								<span

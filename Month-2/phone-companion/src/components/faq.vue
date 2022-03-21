@@ -113,9 +113,9 @@
 		},
 		methods: {
 			toggleFaq(box) {
-        this.box = false
 				let box_array = [this.box_1, this.box_2, this.box_3, this.box_4];
 				let foundBox = box_array.indexOf(box);
+        box = false
 				let mod_box_array = box_array.splice(foundBox, 1);
 				for (let box in mod_box_array) {
 					return box
@@ -129,10 +129,10 @@
 	.faq-box {
 		height: 40px;
 		overflow: hidden;
-		transition: height 5s ease;
+		transition: height 1s ease;
 	}
-	.faq-box:hover {
+	.current_faq {
 		height: auto !important;
-		transition: height 5s ease;
+		transition: height 1s ease;
 	}
 </style>
