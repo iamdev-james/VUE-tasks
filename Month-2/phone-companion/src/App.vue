@@ -351,6 +351,9 @@
 		<section class="flex justify-center items-center mt-16">
 			<FAQ />
 		</section>
+		<section class="w-screen flex justify-center items-center mt-16 mb-20">
+			<Footer />
+		</section>
 	</main>
 </template>
 
@@ -360,11 +363,12 @@
 	import Pricing from "@/components/pricing.vue";
 	import Payment from "@/components/payment.vue";
 	import FAQ from "@/components/faq.vue";
+	import Footer from "@/components/footer.vue";
 
 	export default {
 		name: "App",
 		components: {
-			Header, Testimonial, Pricing, Payment, FAQ, 
+			Header, Testimonial, Pricing, Payment, FAQ, Footer, 
 		},
 	};
 </script>
