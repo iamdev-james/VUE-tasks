@@ -105,7 +105,7 @@
 						username: "denny.hil",
 					},
 					{
-						Rating: 4,
+						Rating: 5,
 						Header: "Layout and organized layers",
 						content:
 							"Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.",
@@ -123,7 +123,7 @@
 						username: "denny.hil",
 					},
 					{
-						Rating: 4,
+						Rating: 5,
 						Header: "Layout and organized layers",
 						content:
 							"Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.",
@@ -132,7 +132,7 @@
 						username: "denny.hil",
 					},
 					{
-						Rating: 4,
+						Rating: 5,
 						Header: "Layout and organized layers",
 						content:
 							"Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.",
