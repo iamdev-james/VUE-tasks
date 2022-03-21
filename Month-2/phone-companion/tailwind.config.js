@@ -169,7 +169,7 @@ module.exports = {
   screens: {
     'sm': '576px',
     'md': '768px',
-    'lg': '992px',
+    'lg': '1024px',
     'xl': '1200px',
   },
 
@@ -259,6 +259,7 @@ module.exports = {
     '3xl': '1.875rem',  // 30px
     '4xl': '2.25rem',   // 36px
     '5xl': '3rem',      // 48px
+    '6xl': '3.3rem',      // 48px
     '8xl': '4.4rem', 
   },
 
@@ -662,6 +663,7 @@ module.exports = {
     '20': '5rem',
     '24': '6rem',
     '32': '8rem',
+    '38': '9rem',
   },
 
 

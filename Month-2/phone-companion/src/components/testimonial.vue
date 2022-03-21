@@ -1,5 +1,5 @@
 <template>
-	<div class="w-5/6 text-center">
+	<div class="w-full xl:w-5/6 py-24 xl:py-0 text-center">
     <div>
       <p class="font-semibold text-core text-blue-light mb-2">TESTIMONIAL</p>
       <p class="text-3xl font-bold text-grey-darkest mb-6">Meet Client Satisfaction</p>

@@ -1,13 +1,13 @@
 <template>
   <div class="bg-blue-lightest rounded-tl-xlg pt-24 w-5/6">
-    <div class="flex flex-row justify-start align-center">
+    <div class="flex flex-row justify-start align-center mb-16 xl:mb-0">
       <div class="flex-1">
         <img :src='require("@/assets/images/sec-G.svg")' />
       </div>
       <div class="flex-1">
         <div class="flex-1 pr-36 h-full">
 					<p class="text-lg font-bold text-blue-darker py-6">PAYMENT SECURITY</p>
-					<p class="text-5xl font-bold leading-normal pb-6">
+					<p class="text-4xl xl:text-5xl font-bold leading-normal pb-6">
 					Secure Payment Transaction System with #1 Ranking
 					</p>
 					<div>

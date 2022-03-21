@@ -6,7 +6,7 @@
 					<Header />
 					<div class="mt-10 h-screen flex flex-row justify-end items-center">
 						<div class="h-full w-5/6 flex-auto flex flex-col justify-around">
-							<p class="text-8xl font-bold leading-tight">
+							<p class="text-6xl xl:text-8xl font-bold leading-tight">
 								Experience your ultimate mobile application
 							</p>
 							<p class="leading-loose -mt-8 text-lg font-medium">
@@ -22,7 +22,7 @@
 								<img :src="require('@/assets/images/watchvideo.svg')" />
 							</div>
 							<div class="flex flex-row justify-start items-center">
-								<span class="mr-4">Sponsored by:</span
+								<span class="mr-2 xl:mr-4">Sponsored by:</span
 								><img :src="require('@/assets/images/logo.svg')" />
 							</div>
 						</div>
@@ -34,6 +34,7 @@
 				</div>
 			</div>
 		</section>
+		<!-- SECTION A -->
 		<section
 			class="flex flex-col justify-around items-center h-quarter w-5/6 mt-32"
 		>
@@ -76,6 +77,7 @@
 				</div>
 			</div>
 		</section>
+		<!-- SECTION B -->
 		<section class="mt-32 flex flex-col justify-center items-center">
 			<div class="flex flex-row justify-center items-start w-2/3">
 				<div class="flex-1">
@@ -83,7 +85,7 @@
 				</div>
 				<div class="flex-1 pl-32 h-full">
 					<p class="text-lg py-6">CORE FEATURES</p>
-					<p class="text-4xl font-bold leading-normal pb-12">
+					<p class="text-3xl xl:text-4xl font-bold leading-normal pb-12">
 						Smart Jackpots that you may love this anytime & anywhere
 					</p>
 					<div>
@@ -128,9 +130,9 @@
 				>
 					<img
 						:src="require('@/assets/images/SEC-C-Icons/icon1.svg')"
-						class="mt-6"
+						class="mt-6 scaler"
 					/>
-					<div class="flex flex-col items-start justify-start px-6">
+					<div class="flex flex-col items-start justify-start px-2 xl:px-6">
 						<p class="text-lg font-semibold my-4">Smart Features</p>
 						<p class="text-sm text-grey-darkest">
 							Get your blood tests delivered at let home collect sample from the
@@ -143,9 +145,9 @@
 				>
 					<img
 						:src="require('@/assets/images/SEC-C-Icons/icon2.svg')"
-						class="mt-6"
+						class="mt-6 scaler"
 					/>
-					<div class="flex flex-col items-start justify-start px-6">
+					<div class="flex flex-col items-start justify-start px-2 xl:px-6">
 						<p class="text-lg my-4 font-semibold">Fast Performance</p>
 						<p class="text-sm text-grey-darkest">
 							Get your blood tests delivered at let home collect sample from the
@@ -158,9 +160,9 @@
 				>
 					<img
 						:src="require('@/assets/images/SEC-C-Icons/icon3.svg')"
-						class="mt-6"
+						class="mt-6 scaler"
 					/>
-					<div class="flex flex-col items-start justify-start px-6">
+					<div class="flex flex-col items-start justify-start px-2 xl:px-6">
 						<p class="text-lg my-4 font-semibold">Unlimited Content</p>
 						<p class="text-sm text-grey-darkest">
 							Get your blood tests delivered at let home collect sample from the
@@ -173,9 +175,9 @@
 				>
 					<img
 						:src="require('@/assets/images/SEC-C-Icons/icon4.svg')"
-						class="mt-6"
+						class="mt-6 scaler"
 					/>
-					<div class="flex flex-col items-start justify-start px-6">
+					<div class="flex flex-col items-start justify-start px-2 xl:px-6">
 						<p class="text-lg my-4 font-semibold">Unlimited Customization</p>
 						<p class="text-sm text-grey-darkest">
 							Get your blood tests delivered at let home collect sample from the
@@ -188,9 +190,9 @@
 				>
 					<img
 						:src="require('@/assets/images/SEC-C-Icons/icon5.svg')"
-						class="mt-6"
+						class="mt-6 scaler"
 					/>
-					<div class="flex flex-col items-start justify-start px-6">
+					<div class="flex flex-col items-start justify-start px-2 xl:px-6">
 						<p class="text-lg my-4 font-semibold">Boost Productivity</p>
 						<p class="text-sm text-grey-darkest">
 							Get your blood tests delivered at let home collect sample from the
@@ -203,9 +205,9 @@
 				>
 					<img
 						:src="require('@/assets/images/SEC-C-Icons/icon6.svg')"
-						class="mt-6"
+						class="mt-6 scaler"
 					/>
-					<div class="flex flex-col items-start justify-start px-6">
+					<div class="flex flex-col items-start justify-start px-2 xl:px-6">
 						<p class="text-lg my-4 font-semibold">Customer Support</p>
 						<p class="text-sm text-grey-darkest">
 							Get your blood tests delivered at let home collect sample from the
@@ -218,9 +220,9 @@
 		<!-- Section-E -->
 		<section class="mt-24 flex flex-col justify-center items-center">
 			<div class="flex flex-row justify-center items-center w-5/6">
-				<div class="flex-1 pr-36 h-full">
+				<div class="flex-1 pr-38 xl:pr-32 h-full">
 					<p class="text-lg py-6">CORE FEATURES</p>
-					<p class="text-5xl font-bold leading-normal pb-6">
+					<p class="text-4xl xl:text-5xl font-bold leading-normal pb-6">
 						Smart Jackpots that you may love this anytime & anywhere
 					</p>
 					<div>
@@ -267,7 +269,7 @@
 								>
 								<img
 									:src="require('@/assets/images/sec-F/arrow1.svg')"
-									class="inline opacity-25"
+									class="inline opacity-25 invisible xl:visible"
 								/>
 							</div>
 							<p class="text-xl font-bold my-6">
@@ -288,7 +290,7 @@
 								>
 								<img
 									:src="require('@/assets/images/sec-F/arrow2.svg')"
-									class="inline opacity-25"
+									class="inline opacity-25 invisible xl:visible"
 								/>
 							</div>
 							<p class="text-xl my-6 font-semibold">
@@ -309,7 +311,7 @@
 								>
 								<img
 									:src="require('@/assets/images/sec-F/arrow1.svg')"
-									class="inline opacity-25"
+									class="inline opacity-25 invisible xl:visible"
 								/>
 							</div>
 							<p class="text-xl my-6 font-bold">
@@ -342,10 +344,10 @@
     <section class="h-screen flex flex-col justify-center items-center">
       <Testimonial />
     </section>
-		<section class="h-screen flex justify-end items-center mt-32">
+		<section class="h-auto flex justify-end items-center mt-32">
 			<Pricing />
 		</section>
-		<section id="Sec-F" class="flex justify-end items-center mt-32">
+		<section id="Sec-F" class="flex justify-end items-center">
 			<Payment />
 		</section>
 		<section class="flex justify-center items-center mt-16">
@@ -402,5 +404,19 @@
 	}
 	#Sec-F-main {
 		background-image: url("@/assets/images/sec-F/pattern-F.svg");
+	}
+	@media screen and (max-width: 1200px) {
+		.showcase-img {
+		flex: 1;
+		margin-right: -20%;
+		margin-left: -16%;
+		height: 80vh;
+		width: 85%;
+		margin-top: 0%;
+		}
+		.section-c {
+		display: grid;
+		grid-template-columns: repeat(2, 500px);
+	}
 	}
 </style>

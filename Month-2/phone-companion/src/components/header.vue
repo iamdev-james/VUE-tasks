@@ -13,6 +13,10 @@
       <div>
         <button class="text-white px-8 py-3 border-white border-2 rounded-full">Get Started</button>
       </div>
+      <!-- <div>
+        <img :src="require('@/assets/images/Header/navdark.png')" height="10px" />
+        <img :src="require('@/assets/images/Header/navwhite.png')" height="1px" />
+      </div> -->
     </div>
   </main>
 </template>
