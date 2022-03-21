@@ -348,6 +348,9 @@
 		<section id="Sec-F" class="flex justify-end items-center mt-32">
 			<Payment />
 		</section>
+		<section class="flex justify-center items-center mt-16">
+			<FAQ />
+		</section>
 	</main>
 </template>
 
@@ -356,11 +359,12 @@
 	import Testimonial from "@/components/testimonial.vue";
 	import Pricing from "@/components/pricing.vue";
 	import Payment from "@/components/payment.vue";
+	import FAQ from "@/components/faq.vue";
 
 	export default {
 		name: "App",
 		components: {
-			Header, Testimonial, Pricing, Payment, 
+			Header, Testimonial, Pricing, Payment, FAQ, 
 		},
 	};
 </script>
