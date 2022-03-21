@@ -345,7 +345,7 @@
 		<section class="h-screen flex justify-end items-center mt-32">
 			<Pricing />
 		</section>
-		<section id="Sec-F" class="h-screen flex justify-end items-center mt-32">
+		<section id="Sec-F" class="flex justify-end items-center mt-32">
 			<Payment />
 		</section>
 	</main>
