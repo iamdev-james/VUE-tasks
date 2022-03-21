@@ -44,7 +44,7 @@
 				</p>
 				<p class="text-4xl font-bold">Meet exciting feature of app</p>
 			</div>
-			<div class="flex flex-row justify-between items-center flex-wrap">
+			<div class="flex flex-row justify-between items-center">
 				<div
 					class="flex flex-col justify-between items-center px-12 text-center leading-loose"
 				>
