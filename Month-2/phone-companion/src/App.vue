@@ -1,27 +1,42 @@
 <template>
-	<main id="container" class="w-screen flex flex-col justify-center items-center">
+	<main
+		id="container"
+		class="w-screen flex flex-col justify-center items-center"
+	>
 		<section id="main" class="w-screen">
 			<div id="app" class="text-white flex items-center justify-center">
-				<div class="mb-32 w-4/5">
+				<div class="mb-4 md:mb-32 w-4/5">
 					<Header />
-					<div class="mt-10 h-screen md:flex flex-row justify-end items-center">
-						<div class="h-full w-5/6 flex-auto flex flex-col justify-around">
-							<p class="text-6xl xl:text-8xl font-bold leading-tight">
+					<div
+						class="-mt-10 md:mt-10 h-screen md:flex flex-row justify-end items-center"
+					>
+						<div
+							class="h-full md:h-full w-full md:px-0 md:w-5/6 flex-auto flex flex-col justify-around"
+						>
+							<p
+								class="text-3xl sm:text-6xl xl:text-8xl font-bold leading-tight"
+							>
 								Experience your ultimate mobile application
 							</p>
-							<p class="leading-loose -mt-8 text-lg font-medium">
+							<p
+								class="leading-loose -mt-32 md:-mt-8 text-core md:text-lg font-medium"
+							>
 								Get your blood tests delivered at let home collect sample from
 								the victory of the managements that supplies best design system
 								guidelines ever.
 							</p>
-							<div class="flex flex-row justify-start items-center">
+							<div
+								class="w-full md:w-auto -mt-32 md:mt-0 flex flex-row justify-start items-center"
+							>
 								<span
-									class="px-10 text-lg mr-4 py-4 bg-white rounded-full text-black"
+									class="px-6 md:px-10 text-core md:text-lg mr-4 py-2 md:py-4 bg-white rounded-full text-black"
 									>Get Started</span
 								>
 								<img :src="require('@/assets/images/watchvideo.svg')" />
 							</div>
-							<div class="flex flex-row justify-start items-center">
+							<div
+								class="flex flex-col md:flex-row justify-start -mt-32 md:mt-0 items-center"
+							>
 								<span class="mr-2 xl:mr-4">Sponsored by:</span
 								><img :src="require('@/assets/images/logo.svg')" />
 							</div>
@@ -42,7 +57,9 @@
 				<p class="text-lg tracking-wider text-blue-darker font-semibold mb-5">
 					Quality Features
 				</p>
-				<p class="text-4xl font-bold">Meet exciting feature of app</p>
+				<p class="text-3xl md:text-4xl font-bold">
+					Meet exciting feature of app
+				</p>
 			</div>
 			<div class="flex flex-col md:flex-row justify-between items-center">
 				<div
@@ -79,11 +96,13 @@
 		</section>
 		<!-- SECTION B -->
 		<section class="mt-32 flex flex-col justify-center items-center flex-wrap">
-			<div class="flex flex-col-reverse md:flex-row justify-center items-start w-2/3">
+			<div
+				class="flex flex-col-reverse md:flex-row justify-center items-start w-2/3"
+			>
 				<div class="flex-1 mt-20 md:mt-0">
 					<img :src="require('@/assets/images/sec-C-Show.svg')" />
 				</div>
-				<div class="flex-1 pl-32 h-full">
+				<div class="md:flex-1 pl-0 md:pl-32 h-full">
 					<p class="text-lg py-6">CORE FEATURES</p>
 					<p class="text-3xl xl:text-4xl font-bold leading-normal pb-12">
 						Smart Jackpots that you may love this anytime & anywhere
@@ -122,7 +141,7 @@
 				<p class="text-lg tracking-wider text-blue-darker font-semibold mb-5">
 					Quality Features
 				</p>
-				<p class="text-4xl font-bold">Meet exciting feature of app</p>
+				<p class="text-3xl md:text-4xl font-bold">Meet exciting feature of app</p>
 			</div>
 			<div class="section-c">
 				<div
@@ -219,10 +238,14 @@
 		</section>
 		<!-- Section-E -->
 		<section class="mt-24 flex flex-col justify-center items-center flex-wrap">
-			<div class="flex flex-col md:flex-row justify-center items-center px-24 md:px-0 w-full md:w-5/6">
+			<div
+				class="flex flex-col md:flex-row justify-center items-center px-4 md:px-24 md:px-0 w-full md:w-5/6"
+			>
 				<div class="flex-1 md:pr-38 text-center md:text-left xl:pr-32 h-full">
 					<p class="text-lg py-6">CORE FEATURES</p>
-					<p class="text-3xl md:text-4xl xl:text-5xl font-bold leading-normal pb-6">
+					<p
+						class="text-3xl md:text-4xl xl:text-5xl font-bold leading-normal pb-6"
+					>
 						Smart Jackpots that you may love this anytime & anywhere
 					</p>
 					<div>
@@ -240,7 +263,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="flex-1 -ml-32">
+				<div class="flex-1 mt-10 md:mt-0 ml-0 md:-ml-32">
 					<img :src="require('@/assets/images/sec-E-showcase.svg')" />
 				</div>
 			</div>
@@ -251,7 +274,7 @@
 				id="Sec-F-main"
 				class="bg-contain bg-center text-white flex items-center justify-center"
 			>
-				<div class="py-32 px-24">
+				<div class="py-32 px-10 text-center md:text-left md:px-24">
 					<div class="mb-16 text-center">
 						<p class="text-sm tracking-wider text-grey font-semibold mb-3">
 							WHATS THE FUNCTION
@@ -341,9 +364,9 @@
 				</div>
 			</div>
 		</section>
-    <section class="h-screen flex flex-col justify-center items-center">
-      <Testimonial />
-    </section>
+		<section class="h-screen flex flex-col justify-center items-center">
+			<Testimonial />
+		</section>
 		<section class="h-auto flex justify-end items-center mt-32">
 			<Pricing />
 		</section>
@@ -370,14 +393,19 @@
 	export default {
 		name: "App",
 		components: {
-			Header, Testimonial, Pricing, Payment, FAQ, Footer, 
+			Header,
+			Testimonial,
+			Pricing,
+			Payment,
+			FAQ,
+			Footer,
 		},
 	};
 </script>
 
 <style>
 	#container {
-		font-family: 'DM Sans', sans-serif;
+		font-family: "DM Sans", sans-serif;
 	}
 	#main {
 		background: linear-gradient(105.18deg, #1e3c72 -2.04%, #2a5298 107.42%);
@@ -407,22 +435,31 @@
 	}
 	@media screen and (max-width: 1200px) {
 		.showcase-img {
-		flex: 1;
-		margin-right: -20%;
-		margin-left: -16%;
-		height: 80vh;
-		width: 85%;
-		margin-top: 0%;
+			flex: 1;
+			margin-right: -20%;
+			margin-left: -16%;
+			height: 80vh;
+			width: 85%;
+			margin-top: 0%;
 		}
 		.section-c {
-		display: grid;
-		grid-template-columns: repeat(2, 500px);
-	}
+			display: grid;
+			grid-template-columns: repeat(2, 500px);
+		}
 	}
 	@media screen and (max-width: 770px) {
 		.section-c {
-		display: grid;
-		grid-template-columns: repeat(2, 300px);
+			display: grid;
+			grid-template-columns: repeat(2, 300px);
+		}
 	}
+	@media screen and (max-width: 576px) {
+		#main {
+			border-radius: 0px 0px 150px 0px;
+		}
+		.section-c {
+			display: grid;
+			grid-template-columns: repeat(1, 300px);
+		}
 	}
 </style>

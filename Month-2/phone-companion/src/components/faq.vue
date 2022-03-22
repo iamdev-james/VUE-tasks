@@ -1,11 +1,11 @@
 <template>
-	<div class="w-5/6 md:w-2/3">
+	<div class="w-full px-6 sm:px-0 sm:w-5/6 md:w-2/3">
 		<div class="text-center mb-16">
 			<p class="text-blue-dark font-semibold">FREQUENT QUESTIONS</p>
 			<p class="text-3xl font-bold">Do you have any question</p>
 		</div>
 		<div>
-			<div :class="{ current_faq: !box_1 }" class="mb-6 px-16 faq-box">
+			<div :class="{ current_faq: !box_1 }" class="mb-6 px-8 sm:px-16 faq-box">
 				<div @click="toggleFaq('box_1')" class="relative mb-12">
 					<img
 						v-show="box_1"

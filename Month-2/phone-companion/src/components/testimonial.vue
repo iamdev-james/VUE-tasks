@@ -1,21 +1,12 @@
 <template>
 	<div class="w-full xl:w-5/6 py-24 xl:py-0 text-center">
-    <div>
-      <p class="font-semibold text-core text-blue-light mb-2">TESTIMONIAL</p>
-      <p class="text-3xl font-bold text-grey-darkest mb-6">Meet Client Satisfaction</p>
-    </div>
-		<slither-slider
-			:options="{
-				autoplay: true,
-				numberOfSlides: 3,
-				secondsOnSlide: 5,
-				controls: false,
-				dots: false,
-				adaptiveHeight: true,
-				animationDuration: '500',
-				overflowHiddenPadding: { top: 0, left: 20, right: 20, bottom: 20 },
-			}"
-		>
+		<div>
+			<p class="font-semibold text-core text-blue-light mb-2">TESTIMONIAL</p>
+			<p class="text-3xl font-bold text-grey-darkest mb-6">
+				Meet Client Satisfaction
+			</p>
+		</div>
+		<slither-slider :options="options">
 			<div
 				style="
 					box-shadow: rgb(38 78 118 / 35%) 0px 0px 1px;
@@ -46,7 +37,9 @@
 					></star-rating
 				></span>
 				<p class="py-6 text-black text-lg font-semibold">{{ user.Header }}</p>
-				<p class="py-6 leading-loose text-grey-darker text-core">{{ user.content }}</p>
+				<p class="py-6 leading-loose text-grey-darker text-core">
+					{{ user.content }}
+				</p>
 				<div class="flex flex-row justify-start items-center">
 					<div class="pr-4"><img :src="user.user_image" /></div>
 					<div>
@@ -67,6 +60,17 @@
 		components: { StarRating },
 		data() {
 			return {
+				windowWidth: window.innerWidth,
+				options: {
+					autoplay: true,
+					numberOfSlides: 3,
+					secondsOnSlide: 5,
+					controls: true,
+					dots: false,
+					adaptiveHeight: true,
+					animationDuration: "500",
+					overflowHiddenPadding: { top: 0, left: 20, right: 20, bottom: 20 },
+				},
 				testimonial: [
 					{
 						Rating: 4,
@@ -152,8 +156,14 @@
 				],
 			};
 		},
+		created () {
+			if (this.windowWidth < 576) {
+				this.options.numberOfSlides = 1
+			} else if (this.windowWidth < 768) {
+				this.options.numberOfSlides = 2
+			}
+		},
 	};
 </script>
 
-<style>
-</style>
+<style></style>

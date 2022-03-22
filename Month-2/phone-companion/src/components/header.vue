@@ -4,7 +4,7 @@
       <div class="flex justify-center items-center">
         <img class="inline" :src='require("@/assets/images/headerLogo.svg")' />
       </div>
-      <div class='w-2/5 flex invisible nrm:visible align-center justify-between'>
+      <div id="header-nav" class='w-2/5 flex invisible nrm:visible align-center justify-between'>
         <p>Home</p>
         <p>Features</p>
         <p>Testimonial</p>
@@ -30,5 +30,10 @@ export default {
 <style>
   #header {
     height: 10vh;
+  }
+  @media screen and (max-width: 576px) {
+  #header-nav {
+    display: none;
+  }
   }
 </style>

@@ -7,9 +7,9 @@
 			<p class="text-lg">WHATS THE FUNCTION</p>
 			<p class="text-4xl font-semibold">Let’s see how it works</p>
 		</div>
-		<div class="w-3/4 flex flex-col md:flex-row justify-around items-center mb-16">
+		<div class="w-full px-6 sm:px-0 sm:w-3/4 flex flex-col md:flex-row justify-around items-center mb-16">
 			<div
-				class="bg-blue-dark mb-10 md:mb-0 w-5/6 md:w-auto leading-loose px-8 h-72 flex flex-col justify-around mr-0 md:mr-6 rounded-lg"
+				class="bg-blue-dark mb-10 md:mb-0 w-full sm:w-5/6 md:w-auto leading-loose px-8 h-72 flex flex-col justify-around mr-0 md:mr-6 rounded-lg"
 			>
 				<button class="invisible px-4 py-2 bg-orange-dark text-white rounded">
 					Recommended
@@ -48,7 +48,7 @@
 					</button>
 				</div>
 			</div>
-			<div class="justify-around bg-white w-5/6 md:w-auto px-8 leading-loose py-6 h-72 rounded-lg">
+			<div class="justify-around bg-white w-full sm:w-5/6 md:w-auto px-8 leading-loose py-6 h-auto sm:h-72 rounded-lg">
 				<button class="px-4 py-2 w-20	 bg-orange-dark text-white rounded">
 					Recommended
 				</button>
@@ -58,7 +58,7 @@
 				</div>
 				<div class="flex flex-row justify-between items-center">
 					<p class="text-grey-darker">For startup enterprise</p>
-					<p class="text-3xl font-bold text-green-light">49.99/mo</p>
+					<p class="text-2xl sm:text-3xl font-bold text-green-light">49.99/mo</p>
 				</div>
 				<div v-for="(benefit, index) in paid_package" :key="index">
 					<div
