@@ -3,18 +3,32 @@
 		id="container"
 		class="w-screen flex flex-col justify-center items-center"
 	>
+		<Sidebar>
+			<ul class="sidebar-panel-nav">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#features">Features</a></li>
+				<li><a href="#testimonial">Testimonial</a></li>
+				<li><a href="#pricing">Pricing</a></li>
+			</ul>
+			<div class="mt-32 ml-16 opacity-50">
+				<a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f mr-4"></i></a>
+				<a href="https://twitter.com" target="_blank"><i class="fab fa-twitter mr-4"></i></a>
+				<a href="https://github.com" target="_blank"><i class="fab fa-github-alt mr-4"></i></a>
+				<a href="https://dribble.com" target="_blank"><i class="fab fa-dribbble"></i></a>
+			</div>
+		</Sidebar>
 		<section id="main" class="w-screen">
 			<div id="app" class="text-white flex items-center justify-center">
-				<div class="mb-4 md:mb-32 w-4/5">
-					<Header />
+				<div class="mb-4 md:mb-32 w-full sm:w-4/5">
+					<Header id="header" />
 					<div
-						class="-mt-10 md:mt-10 h-screen md:flex flex-row justify-end items-center"
+						class="mt-10 px-8 sm:px-0 h-screen md:flex flex-row justify-end items-center"
 					>
 						<div
 							class="h-full md:h-full w-full md:px-0 md:w-5/6 flex-auto flex flex-col justify-around"
 						>
 							<p
-								class="text-3xl sm:text-6xl xl:text-8xl font-bold leading-tight"
+								class="text-4xl sm:text-6xl xl:text-8xl font-bold leading-tight"
 							>
 								Experience your ultimate mobile application
 							</p>
@@ -141,7 +155,9 @@
 				<p class="text-lg tracking-wider text-blue-darker font-semibold mb-5">
 					Quality Features
 				</p>
-				<p class="text-3xl md:text-4xl font-bold">Meet exciting feature of app</p>
+				<p class="text-3xl md:text-4xl font-bold">
+					Meet exciting feature of app
+				</p>
 			</div>
 			<div class="section-c">
 				<div
@@ -389,6 +405,7 @@
 	import Payment from "@/components/payment.vue";
 	import FAQ from "@/components/faq.vue";
 	import Footer from "@/components/footer.vue";
+	import Sidebar from "@/components/sidebar.vue";
 
 	export default {
 		name: "App",
@@ -399,11 +416,16 @@
 			Payment,
 			FAQ,
 			Footer,
+			Sidebar,
 		},
 	};
 </script>
 
 <style>
+	#header {
+		position: fixed;
+		top: 0;
+	}
 	#container {
 		font-family: "DM Sans", sans-serif;
 	}
@@ -456,6 +478,22 @@
 	@media screen and (max-width: 576px) {
 		#main {
 			border-radius: 0px 0px 150px 0px;
+		}
+		ul.sidebar-panel-nav {
+			list-style-type: none;
+			margin-top: 80px;
+			line-height: 50px;
+		}
+
+		ul.sidebar-panel-nav > li > a {
+			color: black;
+			text-decoration: none;
+			font-size: 1.3rem;
+			display: block;
+			padding-bottom: 0.5em;
+		}
+		ul.sidebar-panel-nav li a:active {
+			color: green;
 		}
 		.section-c {
 			display: grid;
