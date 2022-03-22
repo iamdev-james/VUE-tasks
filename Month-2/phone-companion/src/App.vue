@@ -4,7 +4,7 @@
 			<div id="app" class="text-white flex items-center justify-center">
 				<div class="mb-32 w-4/5">
 					<Header />
-					<div class="mt-10 h-screen flex flex-row justify-end items-center">
+					<div class="mt-10 h-screen md:flex flex-row justify-end items-center">
 						<div class="h-full w-5/6 flex-auto flex flex-col justify-around">
 							<p class="text-6xl xl:text-8xl font-bold leading-tight">
 								Experience your ultimate mobile application
@@ -28,7 +28,7 @@
 						</div>
 						<img
 							:src="require('@/assets/images/headershowcase.png')"
-							class="showcase-img"
+							class="showcase-img invisible md:visible"
 						/>
 					</div>
 				</div>
@@ -44,7 +44,7 @@
 				</p>
 				<p class="text-4xl font-bold">Meet exciting feature of app</p>
 			</div>
-			<div class="flex flex-row justify-between items-center">
+			<div class="flex flex-col md:flex-row justify-between items-center">
 				<div
 					class="flex flex-col justify-between items-center px-12 text-center leading-loose"
 				>
@@ -79,8 +79,8 @@
 		</section>
 		<!-- SECTION B -->
 		<section class="mt-32 flex flex-col justify-center items-center flex-wrap">
-			<div class="flex flex-row justify-center items-start w-2/3">
-				<div class="flex-1">
+			<div class="flex flex-col-reverse md:flex-row justify-center items-start w-2/3">
+				<div class="flex-1 mt-20 md:mt-0">
 					<img :src="require('@/assets/images/sec-C-Show.svg')" />
 				</div>
 				<div class="flex-1 pl-32 h-full">
@@ -219,10 +219,10 @@
 		</section>
 		<!-- Section-E -->
 		<section class="mt-24 flex flex-col justify-center items-center flex-wrap">
-			<div class="flex flex-row justify-center items-center w-5/6">
-				<div class="flex-1 pr-38 xl:pr-32 h-full">
+			<div class="flex flex-col md:flex-row justify-center items-center px-24 md:px-0 w-full md:w-5/6">
+				<div class="flex-1 md:pr-38 text-center md:text-left xl:pr-32 h-full">
 					<p class="text-lg py-6">CORE FEATURES</p>
-					<p class="text-4xl xl:text-5xl font-bold leading-normal pb-6">
+					<p class="text-3xl md:text-4xl xl:text-5xl font-bold leading-normal pb-6">
 						Smart Jackpots that you may love this anytime & anywhere
 					</p>
 					<div>
@@ -234,7 +234,7 @@
 						</div>
 						<div class="mt-10">
 							<span
-								class="text-white px-10 text-lg mr-4 py-4 bg-blue-darker rounded-full text-black"
+								class="text-white px-6 md:px-10 text-core md:text-lg mr-4 py-4 bg-blue-darker rounded-full text-black"
 								>Get Started</span
 							>
 						</div>
@@ -249,7 +249,7 @@
 		<section id="Sec-F" class="w-screen mt-32">
 			<div
 				id="Sec-F-main"
-				class="bg-cover bg-center text-white flex items-center justify-center"
+				class="bg-contain bg-center text-white flex items-center justify-center"
 			>
 				<div class="py-32 px-24">
 					<div class="mb-16 text-center">
@@ -258,9 +258,9 @@
 						</p>
 						<p class="text-3xl font-bold">Let’s see how it works</p>
 					</div>
-					<div class="flex flex-row justify-start items-start">
+					<div class="flex flex-col md:flex-row justify-start items-start">
 						<div
-							class="flex flex-col justify-between items-start px-2 flex-wrap leading-loose"
+							class="flex flex-col justify-between mt-8 md:mt-0 items-center md:items-start px-2 flex-wrap leading-loose"
 						>
 							<div class="flex flex-row justify-between items-start">
 								<span
@@ -269,7 +269,7 @@
 								>
 								<img
 									:src="require('@/assets/images/sec-F/arrow1.svg')"
-									class="inline opacity-25 invisible xl:visible"
+									class="inline opacity-25 hidden xl:inline"
 								/>
 							</div>
 							<p class="text-xl font-bold my-6">
@@ -281,7 +281,7 @@
 							</p>
 						</div>
 						<div
-							class="flex flex-col justify-between items-start px-2 leading-loose"
+							class="flex flex-col justify-between mt-8 md:mt-0 items-center md:items-start px-2 leading-loose"
 						>
 							<div class="flex flex-row justify-between items-end">
 								<span
@@ -290,7 +290,7 @@
 								>
 								<img
 									:src="require('@/assets/images/sec-F/arrow2.svg')"
-									class="inline opacity-25 invisible xl:visible"
+									class="inline opacity-25 hidden xl:inline"
 								/>
 							</div>
 							<p class="text-xl my-6 font-semibold">
@@ -302,7 +302,7 @@
 							</p>
 						</div>
 						<div
-							class="flex flex-col justify-between items-start px-3 leading-loose"
+							class="flex flex-col justify-between mt-8 md:mt-0 items-center md:items-start px-3 leading-loose"
 						>
 							<div class="flex flex-row justify-between items-start">
 								<span
@@ -311,7 +311,7 @@
 								>
 								<img
 									:src="require('@/assets/images/sec-F/arrow1.svg')"
-									class="inline opacity-25 invisible xl:visible"
+									class="inline opacity-25 hidden xl:inline"
 								/>
 							</div>
 							<p class="text-xl my-6 font-bold">
@@ -323,7 +323,7 @@
 							</p>
 						</div>
 						<div
-							class="flex flex-col justify-between items-start px-3 leading-loose"
+							class="flex flex-col justify-between mt-8 md:mt-0 items-center md:items-start px-3 leading-loose"
 						>
 							<span
 								class="text-3xl font-semibold px-4 rounded-xl text-blue-darker bg-white"
@@ -417,6 +417,12 @@
 		.section-c {
 		display: grid;
 		grid-template-columns: repeat(2, 500px);
+	}
+	}
+	@media screen and (max-width: 770px) {
+		.section-c {
+		display: grid;
+		grid-template-columns: repeat(2, 300px);
 	}
 	}
 </style>

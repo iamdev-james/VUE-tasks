@@ -1,5 +1,5 @@
 <template>
-	<div class="w-2/3">
+	<div class="w-5/6 md:w-2/3">
 		<div class="text-center mb-16">
 			<p class="text-blue-dark font-semibold">FREQUENT QUESTIONS</p>
 			<p class="text-3xl font-bold">Do you have any question</p>
