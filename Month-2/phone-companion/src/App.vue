@@ -11,18 +11,18 @@
 				<li><a href="#pricing">Pricing</a></li>
 			</ul>
 			<div class="mt-32 ml-16 opacity-50">
-				<a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f mr-4"></i></a>
-				<a href="https://twitter.com" target="_blank"><i class="fab fa-twitter mr-4"></i></a>
-				<a href="https://github.com" target="_blank"><i class="fab fa-github-alt mr-4"></i></a>
-				<a href="https://dribble.com" target="_blank"><i class="fab fa-dribbble"></i></a>
+				<a v-smooth-scroll href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f mr-4"></i></a>
+				<a v-smooth-scroll href="https://twitter.com" target="_blank"><i class="fab fa-twitter mr-4"></i></a>
+				<a v-smooth-scroll href="https://github.com" target="_blank"><i class="fab fa-github-alt mr-4"></i></a>
+				<a v-smooth-scroll href="https://dribble.com" target="_blank"><i class="fab fa-dribbble"></i></a>
 			</div>
 		</Sidebar>
 		<section id="main" class="w-screen">
 			<div id="app" class="text-white flex items-center justify-center">
-				<div id="home" class="mb-4 md:mb-32 w-full sm:w-4/5">
+				<div id="home" class="mb-4 md:mb-32 w-full">
 					<Header id="header" />
 					<div
-						class="mt-10 px-8 sm:px-0 h-screen md:flex flex-row justify-end items-center"
+						class="mt-10 md:mt-24 px-8 sm:px-32 h-screen md:flex flex-row justify-end items-center"
 					>
 						<div
 							class="h-full md:h-full w-full md:px-0 md:w-5/6 flex-auto flex flex-col justify-around"
@@ -62,6 +62,10 @@
 					</div>
 				</div>
 			</div>
+			<!-- Youtube video -->
+		<section class="absolute">
+			<iframe src="https://youtu.be/ZNA9rmDsYVE" title="W3Schools Free Online Web Tutorials"></iframe>
+		</section>
 		</section>
 		<!-- SECTION A -->
 		<section
@@ -406,6 +410,7 @@
 	import FAQ from "@/components/faq.vue";
 	import Footer from "@/components/footer.vue";
 	import Sidebar from "@/components/sidebar.vue";
+	import $ from "jquery";
 
 	export default {
 		name: "App",
@@ -418,14 +423,48 @@
 			Footer,
 			Sidebar,
 		},
+		mounted() {
+			// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus()
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus() // Set focus again
+          }
+        })
+      }
+    }
+  })
+		}
 	};
 </script>
 
 <style>
-	#header {
-		position: fixed;
-		top: 0;
-	}
 	#container {
 		font-family: "DM Sans", sans-serif;
 	}
