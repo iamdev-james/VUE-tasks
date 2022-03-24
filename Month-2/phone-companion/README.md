@@ -1,7 +1,10 @@
 # phone-companion
 A landing app built with vue 2 with tailwind css
 
-The link to the live app is: https://phone-companion.netlify.app
+```
+A quick walk through
+```
+The link to the live app is: https://phone-companion.netlify.app.
 Below is a quick guide on how to run the app locally on your machine
 
 ## Project setup
