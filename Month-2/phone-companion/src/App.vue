@@ -19,7 +19,7 @@
 		</Sidebar>
 		<section id="main" class="w-screen">
 			<div id="app" class="text-white flex items-center justify-center">
-				<div class="mb-4 md:mb-32 w-full sm:w-4/5">
+				<div id="home" class="mb-4 md:mb-32 w-full sm:w-4/5">
 					<Header id="header" />
 					<div
 						class="mt-10 px-8 sm:px-0 h-screen md:flex flex-row justify-end items-center"
@@ -109,7 +109,7 @@
 			</div>
 		</section>
 		<!-- SECTION B -->
-		<section class="mt-32 flex flex-col justify-center items-center flex-wrap">
+		<section id="features" class="mt-32 flex flex-col justify-center items-center flex-wrap">
 			<div
 				class="flex flex-col-reverse md:flex-row justify-center items-start w-2/3"
 			>
@@ -380,10 +380,10 @@
 				</div>
 			</div>
 		</section>
-		<section class="h-screen flex flex-col justify-center items-center">
+		<section id="testimonial" class="h-screen flex flex-col justify-center items-center">
 			<Testimonial />
 		</section>
-		<section class="h-auto flex justify-end items-center mt-32">
+		<section id="pricing" class="h-auto flex justify-end items-center mt-32">
 			<Pricing />
 		</section>
 		<section id="Sec-F" class="flex justify-end items-center">

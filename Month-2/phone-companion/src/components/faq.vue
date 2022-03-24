@@ -112,16 +112,16 @@
 			};
 		},
 		methods: {
-			toggleFaq(box) {
-				let box_array = [this.box_1, this.box_2, this.box_3, this.box_4];
-				let foundBox = box_array.indexOf(box);
-        box = false
-				let mod_box_array = box_array.splice(foundBox, 1);
-				for (let box in mod_box_array) {
-					return box
-				}
-			},
-		},
+			toggleFaq() {
+				// let box_array = [this.box_1, this.box_2, this.box_3, this.box_4];
+				// let foundBox = box_array.indexOf(box);
+        // box = false
+				// let mod_box_array = box_array.splice(foundBox, 1);
+				// for (let box in mod_box_array) {
+				// 	return box
+				// }
+		}
+		}
 	};
 </script>
 

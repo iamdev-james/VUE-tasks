@@ -11,10 +11,10 @@
 				id="header-nav"
 				class="w-2/5 flex invisible nrm:visible align-center justify-between"
 			>
-				<p>Home</p>
-				<p>Features</p>
-				<p>Testimonial</p>
-				<p>Pricing</p>
+				<a href="#home">Home</a>
+				<a href="#features">Features</a>
+				<a href="#testimonial">Testimonial</a>
+				<a href="#pricing">Pricing</a>
 			</div>
 			<div>
 				<button
@@ -61,6 +61,13 @@
 	.container {
 		display: inline-block;
 		cursor: pointer;
+	}
+	a {
+		text-decoration: none;
+		color: white;
+	}
+	a:active{
+		color: green;
 	}
 
 	.bar1,
