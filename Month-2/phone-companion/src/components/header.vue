@@ -159,7 +159,7 @@
 	/* Rotate first bar */
 	.change_1 {
 		-webkit-transform: rotate(-45deg) translate(-9px, 6px);
-		transform: rotate(-45deg) translate(-9px, 6px);
+		transform: rotate(-45deg) translate(-11px, 8px);
 	}
 
 	/* Fade out the second bar */
@@ -170,7 +170,7 @@
 	/* Rotate last bar */
 	.change_3 {
 		-webkit-transform: rotate(45deg) translate(-8px, -8px);
-		transform: rotate(45deg) translate(-8px, -8px);
+		transform: rotate(45deg) translate(-3px, -3px);
 	}
 	@media screen and (max-width: 576px) {
 		#header-nav {
