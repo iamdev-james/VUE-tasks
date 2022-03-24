@@ -62,10 +62,6 @@
 					</div>
 				</div>
 			</div>
-			<!-- Youtube video -->
-		<section class="absolute">
-			<iframe src="https://youtu.be/ZNA9rmDsYVE" title="W3Schools Free Online Web Tutorials"></iframe>
-		</section>
 		</section>
 		<!-- SECTION A -->
 		<section
