@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div id='box' class='box'></div>
+    <div id='container' class='box'></div>
   </div>
 </template>
 
@@ -23,7 +23,7 @@
 	border:1px solid #c39f76;
 	box-sizing:border-box;
 }
-#box:before {
+#container:before {
   content: 'Hello World Hello World Hello World Hello World Hello World Hello World Hello World';
   text-align: center;
   width: 200px;
